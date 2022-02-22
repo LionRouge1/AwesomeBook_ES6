@@ -19,7 +19,7 @@ To get a local copy up and running follow these simple example steps:
 - Enter the following:
 
 ```
-$ https://github.com/samiullahbahadur/awesome_books.git
+$ git@github.com:LionRouge1/AwesomeBook_ES6.git
 
 ```
 
