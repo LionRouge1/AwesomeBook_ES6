@@ -10,10 +10,6 @@
 - Javascript
 - CSS
 
-## Live Demo
-
-[Live Demo Link](https://samiullahbahadur.github.io/awesome_books/)
-
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps:
