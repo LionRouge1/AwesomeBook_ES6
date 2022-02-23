@@ -1,4 +1,4 @@
-export default function showBlock(e) {
+export const showBlock = (e) => {
   const sectionList = document.getElementById('list');
   const sectionAdd = document.getElementById('add_book');
   const sectionContact = document.getElementById('contact');

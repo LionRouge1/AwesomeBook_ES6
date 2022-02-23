@@ -1,5 +1,6 @@
 const snakbar = document.getElementById('message-container');
-export default function snaker(type, mes, time = 4000) {
+
+export const snaker = (type, mes, time = 4000) => {
   const para = document.createElement('p');
   para.classList.add('snakbar');
   para.innerHTML = `${mes} `;

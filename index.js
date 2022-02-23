@@ -1,8 +1,8 @@
 import { DateTime } from './node_modules/luxon/src/luxon.js';
-import displayBook from './modules/display.js';
 import Books from './modules/moduleBook.js';
-import snaker from './modules/flashMessage.js';
-import showBlock from './modules/navbar.js';
+import {snaker} from './modules/flashMessage.js';
+import {showBlock} from './modules/navbar.js';
+import { displayBook, removeBk } from './modules/display.js';
 
 // display date and time
 
@@ -20,7 +20,8 @@ if (localStorage.getItem('books') !== null) {
   });
 }
 
-// add book function
+// add book 
+
 const title = document.getElementById('title');
 const author = document.getElementById('author');
 
@@ -39,14 +40,7 @@ document.querySelector('#book-form').addEventListener('submit', (e) => {
   }
 });
 
-// Remove book function
-
-function removeBk() {
-  const Book = new Books();
-  Book.removeBook(this.id);
-  this.parentNode.parentNode.remove();
-  snaker('remove', '<b> Remove:</b> Book Removed successfully ');
-}
+//Remove the book
 
 const btn = document.querySelectorAll('.btn');
 btn.forEach((element) => {
@@ -54,6 +48,7 @@ btn.forEach((element) => {
 });
 
 // navbar section
+
 const links = document.querySelectorAll('.links');
 links.forEach((element) => {
   element.addEventListener('click', function () {
