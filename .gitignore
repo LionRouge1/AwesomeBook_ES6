@@ -1,0 +1,6 @@
+# .gitignore
+node_modules/
+
+# parcel 
+.parcel-cache/
+dist/
