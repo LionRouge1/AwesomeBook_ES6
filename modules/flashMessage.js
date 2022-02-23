@@ -1,6 +1,5 @@
 const snakbar = document.getElementById('message-container');
-
-export const snaker = (type, mes, time = 4000) => {
+const snaker = (type, mes, time = 4000) => {
   const para = document.createElement('p');
   para.classList.add('snakbar');
   para.innerHTML = `${mes} `;
@@ -25,4 +24,6 @@ export const snaker = (type, mes, time = 4000) => {
   setTimeout(() => {
     snakbar.removeChild(para);
   }, time);
-}
+};
+
+export default snaker;

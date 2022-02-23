@@ -1,7 +1,7 @@
-import Books from "./moduleBook.js";
-import {snaker} from "./flashMessage.js";
+import Books from './moduleBook.js';
+import snaker from './flashMessage.js';
 
-export const displayBook =(book) => {
+export const displayBook = (book) => {
   const list = document.querySelector('.books_table');
   const row = document.createElement('tr');
   const { Id, Btitle, Bauthor } = book;
@@ -9,7 +9,7 @@ export const displayBook =(book) => {
  <td>${Bauthor}</td> <td>
  <button type="submit" id="${Id}" class="btn">Remove</button></td> `;
   list.appendChild(row);
-}
+};
 
 // Remove book function
 

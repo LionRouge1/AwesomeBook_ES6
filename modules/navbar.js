@@ -1,4 +1,4 @@
-export const showBlock = (e) => {
+const showBlock = (e) => {
   const sectionList = document.getElementById('list');
   const sectionAdd = document.getElementById('add_book');
   const sectionContact = document.getElementById('contact');
@@ -27,4 +27,6 @@ export const showBlock = (e) => {
       sectionContact.style.display = 'none';
       break;
   }
-}
+};
+
+export default showBlock;

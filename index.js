@@ -1,7 +1,7 @@
 import { DateTime } from './node_modules/luxon/src/luxon.js';
 import Books from './modules/moduleBook.js';
-import {snaker} from './modules/flashMessage.js';
-import {showBlock} from './modules/navbar.js';
+import snaker from './modules/flashMessage.js';
+import showBlock from './modules/navbar.js';
 import { displayBook, removeBk } from './modules/display.js';
 
 // display date and time
@@ -20,7 +20,7 @@ if (localStorage.getItem('books') !== null) {
   });
 }
 
-// add book 
+// add book
 
 const title = document.getElementById('title');
 const author = document.getElementById('author');
@@ -40,7 +40,7 @@ document.querySelector('#book-form').addEventListener('submit', (e) => {
   }
 });
 
-//Remove the book
+// Remove the book
 
 const btn = document.querySelectorAll('.btn');
 btn.forEach((element) => {
