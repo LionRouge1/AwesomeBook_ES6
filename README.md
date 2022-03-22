@@ -37,6 +37,8 @@ $ git@github.com:LionRouge1/AwesomeBook_ES6.git
 👤 **Matchoudi**
 
 - GitHub: [@githubhandle](https://github.com/LionRouge1)
+- Twitter: [@twitterhandle](https://twitter.com/@Matchoudi1)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 ## 🤝 Contributing
 
