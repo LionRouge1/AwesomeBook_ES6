@@ -13,9 +13,9 @@ export const displayBook = (book) => {
 
 // Remove book function
 
-export function removeBk() {
+export const removeBk = (e) => {
   const Book = new Books();
-  Book.removeBook(this.id);
-  this.parentNode.parentNode.remove();
+  Book.removeBook(e.target.id);
+  e.target.parentNode.parentNode.remove();
   snaker('remove', '<b> Remove:</b> Book Removed successfully ');
 }
