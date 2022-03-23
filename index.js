@@ -51,10 +51,10 @@ btn.forEach((element) => {
 
 const links = document.querySelectorAll('.links');
 links.forEach((element) => {
-  element.addEventListener('click', function () {
+  element.addEventListener('click', (e) => {
     showBlock(element.id);
     const [current] = document.getElementsByClassName('active');
     current.className = current.className.replace(' active', '');
-    this.className += ' active';
+    e.target.className += ' active';
   });
 });
