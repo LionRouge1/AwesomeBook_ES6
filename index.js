@@ -55,7 +55,6 @@ links.forEach((element) => {
     showBlock(element.id);
     const [current] = document.getElementsByClassName('active');
     current.className = current.className.replace(' active', '');
-    console.log(e.target);
     e.target.className += ' active';
   });
 });
