@@ -18,4 +18,4 @@ export const removeBk = (e) => {
   Book.removeBook(e.target.id);
   e.target.parentNode.parentNode.remove();
   snaker('remove', '<b> Remove:</b> Book Removed successfully ');
-}
+};
